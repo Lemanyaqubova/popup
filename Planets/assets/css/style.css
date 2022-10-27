@@ -1,0 +1,32 @@
+.sun{
+    position: relative;
+    top: 250px;
+    width: 300px;
+    height: 300px;
+    margin-left: 550px;
+    border-radius: 50%;
+    background-color: yellow;
+    z-index: 0;
+}
+.mars{
+    position: absolute;
+    left:400px;
+    top:200px;
+    width: 100px;
+    height: 100px;
+    margin-right: 100px;
+    border-radius: 50%;
+    background-color: darkred;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+    
+}
+@keyframes move  {
+    0%   { left:400px; top:200px;z-index:-1;}
+    25%  { left:400px; top:400px;z-index:1;}
+    50%  { left :1000px; top:400px;z-index:-1;transform:scale(1.7);}
+    75%  { left:1000px; top:200px;z-index:0;}
+    100% { left:400px; top:200px;z-index:-1;}
+  }
