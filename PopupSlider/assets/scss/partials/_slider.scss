@@ -5,12 +5,17 @@
         position: fixed;
         top: 0;
         left: 0;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.514);
+        display: none;
+        // display: flex;
         .inner {
             width: 60%;
             margin: 0 auto;
             position: relative;
             top: 13%;
+            border: 5px solid yellow;
+            border-radius: 8px;
+            display: flex;
         }
     }
     img {
